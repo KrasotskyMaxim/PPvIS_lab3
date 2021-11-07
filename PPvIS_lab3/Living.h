@@ -10,7 +10,7 @@ class Living
 {
 public:
 	virtual State who() = 0;
-	virtual Living* next(Ocean ocean) = 0;
+	virtual void next(Ocean ocean, Ocean new_ocean) = 0;
 
 protected:
 	int row, column, cell_position;

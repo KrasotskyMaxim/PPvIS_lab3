@@ -15,6 +15,6 @@ public:
 	}
 
 	State who() { return PLANKTON; }
-	Living* next(Ocean ocean);
+	void next(Ocean old_ocean, Ocean new_ocean);
 };
 

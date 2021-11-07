@@ -1,13 +1,38 @@
 #include "Plankton.h"
+#define new_world new_ocean[row][column][cell_position]
 
-Living* Plankton::next(Ocean ocean)
+void Plankton::next(Ocean old_ocean, Ocean new_ocean)
 {
     hp -= 20;
     int sum[STATES];
 
-    sums(ocean, sum);
+    sums(old_ocean, sum);
     if (hp <= 0)
-        return (new Empty(row, column, cell_position));
+        new_world = new Empty(row, column, cell_position);
     else
-        return new Plankton(row, column, cell_position, hp);
+    {
+        bool reproduction = false;
+        for (int m = -1; m < 2; m++)
+        {
+            for (int n = -1; n < 2; n++)
+            {
+                for (int k = 0; k < 4; k++)
+                {
+                    Living* pretend = old_ocean[row - m][column - n][k];
+                    if (pretend->who() == 0)
+                    {
+                        //delete pretend;
+                        new_ocean[row - m][column - n][k] = new Plankton(row-m, column-n, k);
+                        reproduction = true;
+                        break;
+                    }
+                }
+                if (reproduction)
+                    break;
+            }
+            if (reproduction)
+                break;
+        }  
+    }
+    new_world = new Plankton(row, column, cell_position, hp);
 }

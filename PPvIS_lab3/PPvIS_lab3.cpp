@@ -54,7 +54,7 @@ void eden(Ocean ocean)
 		{
 			for (int i = 0; i < LIFE_IN_CELL; ++i)
 			{
-				if (m == 0 && n == 0 && i == 0)
+				if (m == 1 && n == 1 && i == 1)
 				{
 					delete ocean[m][n][i];
 					ocean[m][n][i] = new Plankton(m, n, i);
@@ -69,10 +69,10 @@ void pr_state(Ocean ocean)
 
 void update(Ocean new_ocean, Ocean old_ocean)
 {
-	for (int m = 0; m < OCEAN_LENGHT; ++m)
-		for (int n = 0; n < OCEAN_WIDTH; ++n)
+	for (int m = 1; m < OCEAN_LENGHT - 1; ++m)
+		for (int n = 1; n < OCEAN_WIDTH - 1; ++n)
 			for (int i = 0; i < LIFE_IN_CELL; ++i)
-				new_ocean[m][n][i] = old_ocean[m][n][i]->next(old_ocean);
+				old_ocean[m][n][i]->next(old_ocean, new_ocean);
 }
 
 void clear(Ocean ocean)
