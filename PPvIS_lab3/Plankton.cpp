@@ -1,4 +1,5 @@
 #include "Plankton.h"
+#include <vector>
 #define new_world new_ocean[row][column][cell_position]
 
 void Plankton::next(Ocean old_ocean, Ocean new_ocean)
@@ -18,13 +19,20 @@ void Plankton::next(Ocean old_ocean, Ocean new_ocean)
             {
                 for (int k = 0; k < 4; k++)
                 {
-                    Living* pretend = old_ocean[row - m][column - n][k];
-                    if (pretend->who() == 0)
+                    if (border(row-m, column-n, k))
                     {
-                        //delete pretend;
-                        new_ocean[row - m][column - n][k] = new Plankton(row-m, column-n, k);
-                        reproduction = true;
-                        break;
+                        Living* pretend = old_ocean[row - m][column - n][k];
+                        if (pretend->who() == 0)
+                        {
+                            //delete pretend;
+                            new_ocean[row - m][column - n][k] = new Plankton(row - m, column - n, k);
+
+                            std::vector<int> params{ row-m, column-n, k };
+                            changed_cells.push_back(params);
+
+                            reproduction = true;
+                            break;
+                        }
                     }
                 }
                 if (reproduction)

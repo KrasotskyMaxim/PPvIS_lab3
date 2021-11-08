@@ -69,10 +69,15 @@ void pr_state(Ocean ocean)
 
 void update(Ocean new_ocean, Ocean old_ocean)
 {
-	for (int m = 1; m < OCEAN_LENGHT - 1; ++m)
-		for (int n = 1; n < OCEAN_WIDTH - 1; ++n)
+	for (int m = 0; m < OCEAN_LENGHT; ++m)
+		for (int n = 0; n < OCEAN_WIDTH; ++n)
 			for (int i = 0; i < LIFE_IN_CELL; ++i)
-				old_ocean[m][n][i]->next(old_ocean, new_ocean);
+			{
+				if (!(changed_cell(m, n, i)))
+					old_ocean[m][n][i]->next(old_ocean, new_ocean);
+			}
+
+	changed_cells.clear();
 }
 
 void clear(Ocean ocean)
