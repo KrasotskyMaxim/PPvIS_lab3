@@ -16,4 +16,5 @@ public:
 
 	State who() { return EMPTY; }
 	void next(Ocean old_ocean, Ocean new_ocean);
+	int get_hp() { return 0; }
 };

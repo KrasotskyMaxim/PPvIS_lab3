@@ -17,9 +17,9 @@ void settings::ocean_model(std::string path)
 	fs.close();
 }
 
-bool settings::border(int row, int column, int cell_position)
+bool settings::border(int row, int column)
 {
-	if ((row >= 0 && row < OCEAN_LENGHT) && (column >= 0 && column < OCEAN_WIDTH) && (cell_position >= 0 && cell_position < LIFE_IN_CELL))
+	if ((row >= 0 && row < OCEAN_LENGHT) && (column >= 0 && column < OCEAN_WIDTH))
 		return true;
 
 	return false;

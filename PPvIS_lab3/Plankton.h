@@ -6,6 +6,7 @@ class Plankton : public Living
 {
 	int hp;
 public:
+
 	Plankton(int row, int column, int cell_position, int hp = 100)
 	{
 		this->row = row;
@@ -16,5 +17,6 @@ public:
 
 	State who() { return PLANKTON; }
 	void next(Ocean old_ocean, Ocean new_ocean);
+	int get_hp() { return this->hp; }
 };
 
