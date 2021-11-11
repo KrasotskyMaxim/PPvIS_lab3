@@ -18,5 +18,11 @@ public:
 	State who() { return PLANKTON; }
 	void next(Ocean old_ocean, Ocean new_ocean);
 	int get_hp() { return this->hp; }
+	int get_sex() { return 0; }
+	int get_age() { return 0; }
+	int get_size() { return 0; }
+
+	void set_hp(int hp) { this->hp = hp; }
+	void set_age(int age) {}
 };
 

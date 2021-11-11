@@ -12,7 +12,7 @@ namespace settings
 	std::vector<std::vector<int>> changed_cells;
 	std::vector<std::vector<int>> reproducted_plankton;
 
-	//const int DPLANKTON = 3, DHERRING = 5, DSHARK = 7, DWHALE = 9, 
+	const int DSHARK = 7; // , DHERRING = 5, DWHALE = 9,
 	const int CYCLES = 11;
 
 	void ocean_model(std::string path);
@@ -24,9 +24,26 @@ namespace settings
 		EMPTY,
 		PLANKTON,
 		//HERRING,
-		//SHARK,
+		SHARK,
 		//WHALE,
 		STATES
+	};
+
+	enum Size
+	{
+		NONE,
+		SMALL,
+		MEDIUM,
+		BIG,
+		SIZES
+	};
+
+	enum Sex
+	{
+		NOT,
+		FEMALE,
+		MALE,
+		SEXES
 	};
 }
 

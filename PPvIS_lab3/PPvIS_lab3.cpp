@@ -4,11 +4,13 @@
 #include "Settings.h"
 #include "Empty.h"
 #include <vector>
+#include "Shark.h"
 using namespace std;
 
 void init(Ocean ocean);
 void eden(Ocean ocean);
-void eden(Ocean ocean, vector<vector<int>> params);
+void eden_plankton(Ocean ocean, vector<vector<int>> params);
+void eden_shark(Ocean ocean, vector<vector<int>> params);
 void pr_state(Ocean ocean);
 void update(Ocean new_ocean, Ocean old_ocean);
 void clear(Ocean ocean);
@@ -19,11 +21,13 @@ void update_reproduct_animals(Ocean ocean);
 int main()
 {
 	Ocean odd, even;
-	vector<vector<int>> animals{ {0, 0, 0}, {0, 1, 2}, {3, 3, 3} };
+	vector<vector<int>> plankton{ {0, 0, 1}, {0, 1, 2}, {3, 3, 3} };
+	vector<vector<int>> shark{ {0, 0, 0, 0}, {0, 1, 1, 1}};
 
 	init(odd);
 	init(even);
-	eden(even, animals);
+	eden_plankton(even, plankton);
+	eden_shark(even, shark);
 
 	view(even, -1);
 
@@ -73,12 +77,21 @@ void eden(Ocean ocean)
 		}
 }
 
-void eden(Ocean ocean, vector<vector<int>> params)
+void eden_plankton(Ocean ocean, vector<vector<int>> params)
 {
 	for (auto vec : params)
 	{
 		delete ocean[vec[0]][vec[1]][vec[2]];
 		ocean[vec[0]][vec[1]][vec[2]] = new Plankton(vec[0], vec[1], vec[2]);
+	}
+}
+
+void eden_shark(Ocean ocean, vector<vector<int>> params)
+{
+	for (auto vec : params)
+	{
+		delete ocean[vec[0]][vec[1]][vec[2]];
+		ocean[vec[0]][vec[1]][vec[2]] = new Shark(vec[0], vec[1], vec[2], vec[3]);
 	}
 }
 
@@ -128,6 +141,11 @@ void view(Ocean ocean, int CYCLE)
 				if (ocean[i][j][k]->who() == 0)
 				{
 					cout << setw(16) << "e[" << i << "][" << j << "][" << k << "]";
+					//emptyNum++;
+				}
+				else if (ocean[i][j][k]->who() == 2)
+				{
+					cout << setw(16) << "sh[" << i << "][" << j << "][" << k << "] - " << ocean[i][j][k]->get_hp() << " ,  " <<ocean[i][j][k]->get_sex();
 					//emptyNum++;
 				}
 				else

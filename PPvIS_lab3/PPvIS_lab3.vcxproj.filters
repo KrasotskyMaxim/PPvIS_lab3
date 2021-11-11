@@ -30,6 +30,12 @@
     <ClCompile Include="Plankton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Predator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Living.h">
@@ -42,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Plankton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Predator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shark.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
