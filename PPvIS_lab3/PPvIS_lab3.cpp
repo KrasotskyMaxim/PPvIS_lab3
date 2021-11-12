@@ -5,12 +5,14 @@
 #include "Empty.h"
 #include <vector>
 #include "Shark.h"
+#include "Whale.h"
 using namespace std;
 
 void init(Ocean ocean);
 void eden(Ocean ocean);
 void eden_plankton(Ocean ocean, vector<vector<int>> params);
 void eden_shark(Ocean ocean, vector<vector<int>> params);
+void eden_whale(Ocean ocean, vector<vector<int>> params);
 void pr_state(Ocean ocean);
 void update(Ocean new_ocean, Ocean old_ocean);
 void clear(Ocean ocean);
@@ -21,13 +23,15 @@ void update_reproduct_animals(Ocean ocean);
 int main()
 {
 	Ocean odd, even;
-	vector<vector<int>> plankton{ {0, 0, 1}, {0, 1, 2}, {3, 3, 3} };
-	vector<vector<int>> shark{ {0, 0, 0, 0}, {0, 1, 1, 1}};
+	vector<vector<int>> plankton{ {1, 1, 3}, {3, 3, 3}, {1, 2, 3 }, {1, 3, 0 } };
+	vector<vector<int>> whale{ {0, 0, 2, FEMALE}, {0, 0, 1, FEMALE}};
+	vector<vector<int>> shark{ {0, 0, 0, FEMALE}, {1, 1, 1, MALE} };
 
 	init(odd);
 	init(even);
 	eden_plankton(even, plankton);
 	eden_shark(even, shark);
+	eden_whale(even, whale);
 
 	view(even, -1);
 
@@ -95,6 +99,15 @@ void eden_shark(Ocean ocean, vector<vector<int>> params)
 	}
 }
 
+void eden_whale(Ocean ocean, vector<vector<int>> params)
+{
+	for (auto vec : params)
+	{
+		delete ocean[vec[0]][vec[1]][vec[2]];
+		ocean[vec[0]][vec[1]][vec[2]] = new Whale(vec[0], vec[1], vec[2], vec[3]);
+	}
+}
+
 void pr_state(Ocean ocean)
 {
 }
@@ -143,16 +156,22 @@ void view(Ocean ocean, int CYCLE)
 					cout << setw(16) << "e[" << i << "][" << j << "][" << k << "]";
 					//emptyNum++;
 				}
+				else if (ocean[i][j][k]->who() == 1)
+				{
+					cout << setw(16) << "p[" << i << "][" << j << "][" << k << "] - " << ocean[i][j][k]->get_hp();
+					//planktonNum++;
+				}
 				else if (ocean[i][j][k]->who() == 2)
 				{
 					cout << setw(16) << "sh[" << i << "][" << j << "][" << k << "] - " << ocean[i][j][k]->get_hp() << " ,  " <<ocean[i][j][k]->get_sex();
 					//emptyNum++;
 				}
-				else
+				else if (ocean[i][j][k]->who() == 3)
 				{
-					cout << setw(16) <<"p[" << i << "][" << j << "][" << k << "] - " << ocean[i][j][k]->get_hp();
+					cout << setw(16) << "w[" << i << "][" << j << "][" << k << "] - " << ocean[i][j][k]->get_hp() << " ,  " << ocean[i][j][k]->get_sex();
 					//planktonNum++;
 				}
+				
 					
 			cout << endl;
 			//cout << setw(4) << "e-" << emptyNum << "p-" << planktonNum << " ";

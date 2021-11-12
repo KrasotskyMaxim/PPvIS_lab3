@@ -6,13 +6,14 @@
 
 namespace settings
 {
-	const int OCEAN_LENGHT = 5;
-	const int OCEAN_WIDTH = 5;
+	const int OCEAN_LENGHT = 7;
+	const int OCEAN_WIDTH = 7;
 	const int LIFE_IN_CELL = 4;
 	std::vector<std::vector<int>> changed_cells;
 	std::vector<std::vector<int>> reproducted_plankton;
 
-	const int DSHARK = 7; // , DHERRING = 5, DWHALE = 9,
+	const int DSHARK = 7; 
+	const int DWHALE = 9;
 	const int CYCLES = 11;
 
 	void ocean_model(std::string path);
@@ -23,15 +24,13 @@ namespace settings
 	{
 		EMPTY,
 		PLANKTON,
-		//HERRING,
 		SHARK,
-		//WHALE,
+		WHALE,
 		STATES
 	};
 
 	enum Size
 	{
-		NONE,
 		SMALL,
 		MEDIUM,
 		BIG,
@@ -40,7 +39,6 @@ namespace settings
 
 	enum Sex
 	{
-		NOT,
 		FEMALE,
 		MALE,
 		SEXES

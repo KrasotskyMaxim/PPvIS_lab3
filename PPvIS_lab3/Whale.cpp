@@ -1,8 +1,9 @@
-#include "Shark.h"
+#include "Whale.h"
 #define new_world new_ocean[row][column][cell_position]
 #define old_world old_ocean[new_row][new_column]
 
-void Shark::next(Ocean old_ocean, Ocean new_ocean)
+
+void Whale::next(Ocean old_ocean, Ocean new_ocean)
 {
 
     srand(time(NULL));
@@ -17,35 +18,35 @@ void Shark::next(Ocean old_ocean, Ocean new_ocean)
     bool reproduction = false;
     sums(old_ocean, sum);
 
-    if (age > DSHARK)
+    if (age > DWHALE)
         new_world = new Empty(row, column, cell_position);
     else
     {
         if (sum[PLANKTON] > 0)
         {
-        for (int k = 0; k < LIFE_IN_CELL; k++)
-        {
-            if (old_ocean[row][column][k]->who() == 1)
-                old_ocean[row][column][k] = new Empty(row, column, k);
-        }
+            for (int k = 0; k < LIFE_IN_CELL; k++)
+            {
+                if (old_ocean[row][column][k]->who() == 1)
+                    old_ocean[row][column][k] = new Empty(row, column, k);
+            }
 
-        hp += 20 * size;
+            hp += 20 * size;
 
-        new_ocean[row][column][cell_position] = new Shark(row, column, cell_position, sex, size, hp, age);
+            new_ocean[row][column][cell_position] = new Whale(row, column, cell_position, sex, size, hp, age);
         }
         else
         {
-            if (sum[SHARK] == 2)
+            if (sum[WHALE] == 2)
             {
                 for (int k = 0; k < LIFE_IN_CELL; k++)
                 {
-                    if (old_ocean[row][column][k]->who() == 2 && old_ocean[row][column][k]->get_sex() != sex)
+                    if (old_ocean[row][column][k]->who() == 3 && old_ocean[row][column][k]->get_sex() != sex)
                         for (int kk = 0; kk < LIFE_IN_CELL; kk++)
                         {
                             if (old_ocean[row][column][kk]->who() == 0)
                             {
                                 int sex = rand() % 2;
-                                new_ocean[row][column][kk] = new Shark(row, column, kk, sex);
+                                new_ocean[row][column][kk] = new Whale(row, column, kk, sex);
 
                                 std::vector<int> update_params{ row, column, k };
                                 changed_cells.push_back(update_params);
@@ -54,15 +55,15 @@ void Shark::next(Ocean old_ocean, Ocean new_ocean)
 
                                 reproduction = true;
 
-                                int other_age = old_ocean[row][column][k]->get_age()+1;
+                                int other_age = old_ocean[row][column][k]->get_age() + 1;
                                 old_ocean[row][column][k]->set_age(other_age);
-                                int other_hp = old_ocean[row][column][k]->get_hp() - 20;
+                                int other_hp = old_ocean[row][column][k]->get_hp() - 20 * size;
                                 old_ocean[row][column][k]->set_hp(other_hp);
 
                                 if (old_ocean[row][column][k]->get_age() > DSHARK || old_ocean[row][column][k]->get_hp() <= 0)
                                     new_ocean[row][column][k] = new Empty(row, column, k);
                                 else
-                                    new_ocean[row][column][k] = new Shark(row, column, k, old_ocean[row][column][k]->get_sex(), 0, other_hp, other_age);
+                                    new_ocean[row][column][k] = new Whale(row, column, k, old_ocean[row][column][k]->get_sex(), 0, other_hp, other_age);
 
                                 break;
                             }
@@ -76,7 +77,7 @@ void Shark::next(Ocean old_ocean, Ocean new_ocean)
                 complete_move = false;
                 while (!(complete_move))
                 {
-                    int rand_move = rand() % 5;
+                    int rand_move = rand() % 4;
                     next_row = row;
                     next_column = column;
 
@@ -138,12 +139,12 @@ void Shark::next(Ocean old_ocean, Ocean new_ocean)
             else if (complete_move)
             {
                 new_ocean[row][column][cell_position] = new Empty(row, column, cell_position);
-                new_ocean[next_row][next_column][cell_position] = new Shark(next_row, next_column, cell_position, sex, size, hp, age);
+                new_ocean[next_row][next_column][cell_position] = new Whale(next_row, next_column, cell_position, sex, size, hp, age);
                 std::vector<int> update_params{ next_row, next_column, cell_position };
                 changed_cells.push_back(update_params);
             }
             else
-                new_ocean[row][column][cell_position] = new Shark(row, column, cell_position, sex, size, hp, age);
+                new_ocean[row][column][cell_position] = new Whale(row, column, cell_position, sex, size, hp, age);
         }
     }
 }

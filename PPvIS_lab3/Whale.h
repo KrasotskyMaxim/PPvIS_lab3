@@ -4,13 +4,13 @@
 #include "Predator.h"
 #include "Empty.h"
 
-class Shark : public Predator
+class Whale : public Predator
 {
 public:
-	Shark(int row, int column, int cell_position, int sex, int size = MEDIUM, int hp = 100, int age = 0) : Predator(row, column, cell_position, sex, size, hp, age) { this->move = 2; this->size = MEDIUM; }
+	Whale(int row, int column, int cell_position, int sex, int size = BIG, int hp = 200, int age = 0) : Predator(row, column, cell_position, sex, size, hp, age) { this->move = 1; this->size = BIG; }
 
 	void next(Ocean old_ocean, Ocean new_ocean);
-	State who() { return SHARK; }
+	State who() { return WHALE; }
 
 	int get_hp() { return this->hp; }
 	int get_age() { return this->age; }
@@ -21,4 +21,5 @@ public:
 	void set_age(int age) { this->age = age; }
 
 };
+
 

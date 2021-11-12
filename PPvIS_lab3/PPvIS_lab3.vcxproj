@@ -147,6 +147,7 @@
     <ClCompile Include="Predator.cpp" />
     <ClCompile Include="Settings.cpp" />
     <ClCompile Include="Shark.cpp" />
+    <ClCompile Include="Whale.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Empty.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="Predator.h" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="Shark.h" />
+    <ClInclude Include="Whale.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

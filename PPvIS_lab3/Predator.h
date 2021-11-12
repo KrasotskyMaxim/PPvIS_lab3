@@ -8,7 +8,7 @@ protected:
 	int hp, age, sex, size;
 	int move;
 public:
-	Predator(int row, int column, int cell_position, int sex, int size = 0, int hp = 100, int age = 0)
+	Predator(int row, int column, int cell_position, int sex, int size = MEDIUM, int hp = 100, int age = 0)
 	{
 		this->row = row;
 		this->column = column;
