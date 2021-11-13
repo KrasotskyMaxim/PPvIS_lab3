@@ -1,0 +1,168 @@
+\hypertarget{class_living}{}\doxysection{Living Class Reference}
+\label{class_living}\index{Living@{Living}}
+
+
+parent class \mbox{\hyperlink{class_living}{Living}}  
+
+
+
+
+{\ttfamily \#include $<$Living.\+h$>$}
+
+Inheritance diagram for Living\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_living}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{State}} \mbox{\hyperlink{class_living_a32fd2a4e60cd14b99ce8d8aa92a0004e}{who}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_living_a6197d9e1d03aca11dc8c63d2a5e42d6e}{next}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} new\+\_\+ocean)=0
+\item 
+virtual int \mbox{\hyperlink{class_living_a3d7dfb5cfcc5df7ca36d2845f7090e4c}{get\+\_\+hp}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_living_a6633811e44782a59b2117e18822e275f}{get\+\_\+sex}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_living_a387aa656982501ffd370c8f43648bdbc}{get\+\_\+age}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_living_ab3bb945e923ec145b604cfa190a318f2}{get\+\_\+size}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_living_a046b712648b571ac21d46dcb99b09cc6}{set\+\_\+hp}} (int hp)=0
+\item 
+virtual void \mbox{\hyperlink{class_living_a2a5c165595ccf6c0971f6182c8c6818c}{set\+\_\+age}} (int age)=0
+\item 
+void \mbox{\hyperlink{class_living_a4f8cfe01b8400fa4e8d4bde30fe7779c}{sums}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, int sm\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_living_a563bcb867cc8bc86d3158a1d59b9d112}{row}}
+\item 
+int \mbox{\hyperlink{class_living_ad6e936673b248c85a62d68c55222357d}{column}}
+\item 
+int \mbox{\hyperlink{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}{cell\+\_\+position}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+parent class \mbox{\hyperlink{class_living}{Living}} 
+
+contains interface for out population models (plankton, shark, whale, etc...) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_living_a387aa656982501ffd370c8f43648bdbc}\label{class_living_a387aa656982501ffd370c8f43648bdbc}} 
+\index{Living@{Living}!get\_age@{get\_age}}
+\index{get\_age@{get\_age}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{get\_age()}{get\_age()}}
+{\footnotesize\ttfamily virtual int Living\+::get\+\_\+age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_empty_a94bec7a854c48c9a222d83333afe2203}{Empty}}, and \mbox{\hyperlink{class_plankton_ac20fc6dac800c9c11b1bc4ae2fe4be4e}{Plankton}}.
+
+\mbox{\Hypertarget{class_living_a3d7dfb5cfcc5df7ca36d2845f7090e4c}\label{class_living_a3d7dfb5cfcc5df7ca36d2845f7090e4c}} 
+\index{Living@{Living}!get\_hp@{get\_hp}}
+\index{get\_hp@{get\_hp}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{get\_hp()}{get\_hp()}}
+{\footnotesize\ttfamily virtual int Living\+::get\+\_\+hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_empty_a78b734c741196f91d3ca704187803d0a}{Empty}}, and \mbox{\hyperlink{class_plankton_acc6d81a5ceeaf6e6c90fe6dd068ffcf4}{Plankton}}.
+
+\mbox{\Hypertarget{class_living_a6633811e44782a59b2117e18822e275f}\label{class_living_a6633811e44782a59b2117e18822e275f}} 
+\index{Living@{Living}!get\_sex@{get\_sex}}
+\index{get\_sex@{get\_sex}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{get\_sex()}{get\_sex()}}
+{\footnotesize\ttfamily virtual int Living\+::get\+\_\+sex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_empty_afb1bc0eb5548d5938e70f6154c0a9f9f}{Empty}}, and \mbox{\hyperlink{class_plankton_ad85de6eae48d96dc686146e1d2db9410}{Plankton}}.
+
+\mbox{\Hypertarget{class_living_ab3bb945e923ec145b604cfa190a318f2}\label{class_living_ab3bb945e923ec145b604cfa190a318f2}} 
+\index{Living@{Living}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily virtual int Living\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_empty_a4c872f12a6c0c3fd4f8de5b860000837}{Empty}}, and \mbox{\hyperlink{class_plankton_aa34335c0bb660cf4128f0928c8f19d2b}{Plankton}}.
+
+\mbox{\Hypertarget{class_living_a6197d9e1d03aca11dc8c63d2a5e42d6e}\label{class_living_a6197d9e1d03aca11dc8c63d2a5e42d6e}} 
+\index{Living@{Living}!next@{next}}
+\index{next@{next}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily virtual void Living\+::next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean,  }\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{new\+\_\+ocean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_empty_a7fa10d14a501174c453eaa9df16605ee}{Empty}}, and \mbox{\hyperlink{class_plankton_ac2453b1d1eb6db0946a7a8f4078b4f10}{Plankton}}.
+
+\mbox{\Hypertarget{class_living_a2a5c165595ccf6c0971f6182c8c6818c}\label{class_living_a2a5c165595ccf6c0971f6182c8c6818c}} 
+\index{Living@{Living}!set\_age@{set\_age}}
+\index{set\_age@{set\_age}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{set\_age()}{set\_age()}}
+{\footnotesize\ttfamily virtual void Living\+::set\+\_\+age (\begin{DoxyParamCaption}\item[{int}]{age }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_empty_a39618de0c3d27e3c76b307e942752146}{Empty}}, and \mbox{\hyperlink{class_plankton_a355cba3859427d47e3a3d7b3aa38a710}{Plankton}}.
+
+\mbox{\Hypertarget{class_living_a046b712648b571ac21d46dcb99b09cc6}\label{class_living_a046b712648b571ac21d46dcb99b09cc6}} 
+\index{Living@{Living}!set\_hp@{set\_hp}}
+\index{set\_hp@{set\_hp}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{set\_hp()}{set\_hp()}}
+{\footnotesize\ttfamily virtual void Living\+::set\+\_\+hp (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_empty_a27fcfd2891e13cdd2e884f270b5144fc}{Empty}}, and \mbox{\hyperlink{class_plankton_abdeca0dc34f98dbb6358c8fbfc303bc1}{Plankton}}.
+
+\mbox{\Hypertarget{class_living_a4f8cfe01b8400fa4e8d4bde30fe7779c}\label{class_living_a4f8cfe01b8400fa4e8d4bde30fe7779c}} 
+\index{Living@{Living}!sums@{sums}}
+\index{sums@{sums}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{sums()}{sums()}}
+{\footnotesize\ttfamily void Living\+::sums (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean,  }\item[{int}]{sm\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_living_a32fd2a4e60cd14b99ce8d8aa92a0004e}\label{class_living_a32fd2a4e60cd14b99ce8d8aa92a0004e}} 
+\index{Living@{Living}!who@{who}}
+\index{who@{who}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{who()}{who()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{State}} Living\+::who (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_empty_a142ab82b64b2c35a2a4613b3a718101f}{Empty}}, and \mbox{\hyperlink{class_plankton_a2aff4f58e697963010eeab9ffed5bc50}{Plankton}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}\label{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}} 
+\index{Living@{Living}!cell\_position@{cell\_position}}
+\index{cell\_position@{cell\_position}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{cell\_position}{cell\_position}}
+{\footnotesize\ttfamily int Living\+::cell\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_living_ad6e936673b248c85a62d68c55222357d}\label{class_living_ad6e936673b248c85a62d68c55222357d}} 
+\index{Living@{Living}!column@{column}}
+\index{column@{column}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{column}{column}}
+{\footnotesize\ttfamily int Living\+::column\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_living_a563bcb867cc8bc86d3158a1d59b9d112}\label{class_living_a563bcb867cc8bc86d3158a1d59b9d112}} 
+\index{Living@{Living}!row@{row}}
+\index{row@{row}!Living@{Living}}
+\doxysubsubsection{\texorpdfstring{row}{row}}
+{\footnotesize\ttfamily int Living\+::row\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_living_8h}{Living.\+h}}\item 
+\mbox{\hyperlink{_living_8cpp}{Living.\+cpp}}\end{DoxyCompactItemize}

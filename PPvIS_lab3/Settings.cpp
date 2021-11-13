@@ -3,6 +3,8 @@
 void settings::ocean_model(std::string path)
 {
 	std::fstream fs;
+	std::vector<int> params;
+	int animal_count;
 
 	try
 	{
@@ -12,6 +14,55 @@ void settings::ocean_model(std::string path)
 	catch (const std::exception&)
 	{
 		std::cout << "\nFile open error!\n";
+	}
+
+	fs >> CYCLES;
+	fs >> animal_count;
+	int iter = 0;
+
+	while (iter < animal_count)
+	{
+		int position;
+		for (int i = 0; i < 3; i++)
+		{
+			fs >> position;
+			params.push_back(position);
+		}
+		iter++;
+		plankton.push_back(params);
+		params.clear();
+	}
+	
+	fs >> animal_count;
+	iter = 0;
+
+	while (iter < animal_count)
+	{
+		int position;
+		for (int i = 0; i < 4; i++)
+		{
+			fs >> position;
+			params.push_back(position);
+		}
+		iter++;
+		shark.push_back(params);
+		params.clear();
+	}
+
+	fs >> animal_count;
+	iter = 0;
+
+	while (iter < animal_count)
+	{
+		int position;
+		for (int i = 0; i < 4; i++)
+		{
+			fs >> position;
+			params.push_back(position);
+		}
+		iter++;
+		whale.push_back(params);
+		params.clear();
 	}
 
 	fs.close();

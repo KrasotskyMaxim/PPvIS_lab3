@@ -1,9 +1,19 @@
+/*!
+	\brief Whale class file
+
+	file contains Whale class that second of predators
+*/
 #pragma once
 #include "Settings.h"
 #include "Living.h"
 #include "Predator.h"
 #include "Empty.h"
 
+/*!
+	\brief Whale
+
+	inherited from PRedator and can eat plankton, have hp, age and sex
+*/
 class Whale : public Predator
 {
 public:

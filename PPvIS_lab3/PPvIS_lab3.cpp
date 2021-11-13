@@ -1,3 +1,9 @@
+/**
+	\brief file with the main functions for manage the ocean model
+	
+	This file contains main function and ither methods for generate, build,
+	populate, view and clear ocean model.
+*/
 #include <iostream>
 #include <iomanip>
 #include "Living.h"
@@ -8,30 +14,88 @@
 #include "Whale.h"
 using namespace std;
 
+/**
+	initialize ocean model
+
+	\param ocean
+*/
 void init(Ocean ocean);
+/**
+	populate ocean model in general case
+
+	\param ocean
+*/
 void eden(Ocean ocean);
+/**
+	populate ocean model with planktons
+
+	receive vector of planktons coordinates 
+
+	\param ocean, params
+*/
 void eden_plankton(Ocean ocean, vector<vector<int>> params);
+/**
+	populate ocean model with sharks
+
+	receive vector of sharks coordinates
+
+	\param ocean, params
+*/
 void eden_shark(Ocean ocean, vector<vector<int>> params);
+/**
+	populate ocean model with whales
+
+	receive vector of whales coordinates
+
+	\param ocean, params
+*/
 void eden_whale(Ocean ocean, vector<vector<int>> params);
-void pr_state(Ocean ocean);
+/**
+	update the ocean model to the next life cycle
+
+	\param old_ocean, new_ocean
+*/
 void update(Ocean new_ocean, Ocean old_ocean);
+/**
+	clear old_ocean after updating
+
+	\param ocean
+*/
 void clear(Ocean ocean);
+/**
+	show in console the ocealn model condition on every cycle
+
+	\param ocean, CYCLE
+*/
 void view(Ocean ocean, int CYCLE);
+/**
+	update ocean model according to new animals after reprodiction
+
+	\param ocean
+*/
 void update_reproduct_animals(Ocean ocean);
 
 
+/*!
+	work with ocean model in depend of user settings
+
+	function logic can be like that example:
+	\code
+		
 int main()
 {
+	cout << "Enter path: ";
+	cin >> settings::path;
+
+	ocean_model(path);
+
 	Ocean odd, even;
-	vector<vector<int>> plankton{ {1, 1, 3}, {3, 3, 3}, {1, 2, 3 }, {1, 3, 0 } };
-	vector<vector<int>> whale{ {0, 0, 2, FEMALE}, {0, 0, 1, FEMALE}};
-	vector<vector<int>> shark{ {0, 0, 0, FEMALE}, {1, 1, 1, MALE} };
 
 	init(odd);
 	init(even);
-	eden_plankton(even, plankton);
-	eden_shark(even, shark);
-	eden_whale(even, whale);
+	eden_plankton(even, settings::plankton);
+	eden_shark(even, settings::shark);
+	eden_whale(even, settings::whale);
 
 	view(even, -1);
 
@@ -51,6 +115,46 @@ int main()
 		}
 	}
 
+	system("pause");
+	return 0;
+}
+
+	\encode
+*/
+int main()
+{
+	cout << "Enter path: ";
+	cin >> settings::path;
+
+	ocean_model(path);
+
+	Ocean odd, even;	
+
+	init(odd);
+	init(even);
+	eden_plankton(even, settings::plankton);
+	eden_shark(even, settings::shark);
+	eden_whale(even, settings::whale);
+
+	view(even, -1);
+
+	for (int i = 0; i < CYCLES; ++i)
+	{
+		if (i % 2)
+		{
+			update(even, odd);
+			view(even, i);
+			clear(odd);
+		}
+		else
+		{
+			update(odd, even);
+			view(odd, i);
+			clear(even);
+		}
+	}
+
+	system("pause");
 	return 0;
 }
 
@@ -106,10 +210,6 @@ void eden_whale(Ocean ocean, vector<vector<int>> params)
 		delete ocean[vec[0]][vec[1]][vec[2]];
 		ocean[vec[0]][vec[1]][vec[2]] = new Whale(vec[0], vec[1], vec[2], vec[3]);
 	}
-}
-
-void pr_state(Ocean ocean)
-{
 }
 
 void update(Ocean new_ocean, Ocean old_ocean)

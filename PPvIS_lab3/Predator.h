@@ -1,7 +1,35 @@
+/*!
+	\brief Predator class file
+
+	file contains Predator class for generate new danger animals
+*/
 #pragma once
 #include "Settings.h"
 #include "Living.h"
 
+
+/*!
+	\brief Predator
+
+	inherited from Living and is abstract class that contains additional interface for Shark and Whale
+
+	\code
+
+	Predator(int row, int column, int cell_position, int sex, int size = MEDIUM, int hp = 100, int age = 0)
+	{
+		this->row = row;
+		this->column = column;
+		this->cell_position = cell_position;
+
+		this->hp = hp;
+		this->age = age;
+
+		this->sex = sex;
+		this->size = size;
+	}
+
+	\encode
+*/
 class Predator : public Living
 {
 protected:

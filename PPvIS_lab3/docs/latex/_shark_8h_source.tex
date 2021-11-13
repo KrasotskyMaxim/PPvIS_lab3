@@ -1,0 +1,31 @@
+\hypertarget{_shark_8h_source}{}\doxysection{Shark.\+h}
+\mbox{\hyperlink{_shark_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_settings_8h}{Settings.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_living_8h}{Living.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_predator_8h}{Predator.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_empty_8h}{Empty.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_shark}{Shark}} : \textcolor{keyword}{public} Predator}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_shark_a710fab01aa95a2613ffcb24326162712}{Shark}}(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column, \textcolor{keywordtype}{int} cell\_position, \textcolor{keywordtype}{int} sex, \textcolor{keywordtype}{int} size = \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95ad811fb155363f132589e7cc5344be2e9}{MEDIUM}}, \textcolor{keywordtype}{int} hp = 100, \textcolor{keywordtype}{int} age = 0) : Predator(row, column, cell\_position, sex, size, hp, age) \{ this-\/>move = 2; this-\/>size = \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95ad811fb155363f132589e7cc5344be2e9}{MEDIUM}}; \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shark_ab2960b975e31e66e07d9326ab256d72f}{next}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} old\_ocean, \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} new\_ocean);}
+\DoxyCodeLine{24     \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{State}} \mbox{\hyperlink{class_shark_a741261dd2e37093af9f1e7041530c33e}{who}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a66693283525e4f522affeb83257e45db}{SHARK}}; \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shark_a3e4e318a23e8ce3155a64225c689e626}{get\_hp}}() \{ \textcolor{keywordflow}{return} this-\/>hp; \}}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shark_acc92d4ac37b7b3ead86cd8a6a4468790}{get\_age}}() \{ \textcolor{keywordflow}{return} this-\/>age; \}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shark_ac43db352f8f6c652ffdaec077b28a593}{get\_sex}}() \{ \textcolor{keywordflow}{return} this-\/>sex; \}}
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shark_a6392015da8c9b5183af546d3ac564962}{get\_size}}() \{ \textcolor{keywordflow}{return} this-\/>size; \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shark_a708e7f5bd501d185f05b93f2196f6de7}{set\_hp}}(\textcolor{keywordtype}{int} hp) \{ this-\/>hp = hp; \}}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shark_a40ddd3daeae806e4cc4f3c4e5b5704d2}{set\_age}}(\textcolor{keywordtype}{int} age) \{ this-\/>age = age; \}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+
+\end{DoxyCode}

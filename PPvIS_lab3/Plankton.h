@@ -1,7 +1,18 @@
+/*!
+	\brief Plankton class file
+
+	file contains Plankton class that is food for predator
+*/
 #pragma once
 #include "Living.h"
 #include "Empty.h"
 
+
+/*!
+	\brief Plankton
+
+	inherited from Living and contains it`s another methods and fields such as reproduction and hp
+*/
 class Plankton : public Living
 {
 	int hp;

@@ -1,0 +1,70 @@
+\hypertarget{_settings_8h}{}\doxysection{Settings.\+h File Reference}
+\label{_settings_8h}\index{Settings.h@{Settings.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacesettings}{settings}}
+\begin{DoxyCompactList}\small\item\em ontains namespace settings for ocean model \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{settings\+::\+State}} \{ \newline
+\mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a388db07b18b866eb9c9dc9a0d15b49ed}{settings\+::\+EMPTY}}
+, \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a209c39729811370eec1da898fcafb903}{settings\+::\+PLANKTON}}
+, \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a66693283525e4f522affeb83257e45db}{settings\+::\+SHARK}}
+, \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2ab45d6c9b9565bfcf004948626703e6de}{settings\+::\+WHALE}}
+, \newline
+\mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a84a53f9db5f99fba1d12ac126299390f}{settings\+::\+STATES}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95}{settings\+::\+Size}} \{ \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95a379b6ac2de272f715f31ef2f9eecd809}{settings\+::\+SMALL}}
+, \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95ad811fb155363f132589e7cc5344be2e9}{settings\+::\+MEDIUM}}
+, \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95ac0722e6635fae2288e4e09ccca82008d}{settings\+::\+BIG}}
+, \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95a17da635e948df9e6ed4cca4b7a47601b}{settings\+::\+SIZES}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efba}{settings\+::\+Sex}} \{ \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaafdc856bdf75f1cbf57a582ef9c6459fd}{settings\+::\+FEMALE}}
+, \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaa57fc4eb509be3487f8987b710355f777}{settings\+::\+MALE}}
+, \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaa132564f39863a09549dba91ffeb9e176}{settings\+::\+SEXES}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacesettings_a38b03cb09d38a0dfc1809a7c3f48dcba}{settings\+::ocean\+\_\+model}} (std\+::string path)
+\item 
+bool \mbox{\hyperlink{namespacesettings_a6b9a72a925e6c344f93e08e037cc1e6c}{settings\+::border}} (int row, int column)
+\item 
+bool \mbox{\hyperlink{namespacesettings_a07e9c40d189e8c742a68454675deafee}{settings\+::changed\+\_\+cell}} (int row, int column, int cell\+\_\+position)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacesettings_a082c4741f3750c712bd4cae91427ef82}{settings\+::path}}
+\item 
+const int \mbox{\hyperlink{namespacesettings_af7089d8d7a382835b1a4453a15d83538}{settings\+::\+OCEAN\+\_\+\+LENGHT}} = 5
+\item 
+const int \mbox{\hyperlink{namespacesettings_a9f67df62d48a9cb23fcab1fb13316121}{settings\+::\+OCEAN\+\_\+\+WIDTH}} = 5
+\item 
+const int \mbox{\hyperlink{namespacesettings_a7f91d0e13a6b75ddf51c1dce6804a5fe}{settings\+::\+LIFE\+\_\+\+IN\+\_\+\+CELL}} = 4
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{namespacesettings_a6db971b6718339a9403372e1fa50e674}{settings\+::changed\+\_\+cells}}
+\begin{DoxyCompactList}\small\item\em changed after updating cells coordinates \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{namespacesettings_a520929782d489c35e35a9cffecb63dbc}{settings\+::reproducted\+\_\+plankton}}
+\begin{DoxyCompactList}\small\item\em changed after plankton reproduction cells coordinates \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacesettings_a61557d3a73069743f694b468eff44d5a}{settings\+::\+DSHARK}} = 7
+\item 
+const int \mbox{\hyperlink{namespacesettings_a6c6bcace2f863d38fbc5860744279621}{settings\+::\+DWHALE}} = 9
+\item 
+int \mbox{\hyperlink{namespacesettings_aca0c44f1d3e93fcd20768cefe88fd4e6}{settings\+::\+CYCLES}}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{namespacesettings_a176e15dae5bea7edb18b5696b55e0f62}{settings\+::plankton}}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{namespacesettings_acd154092c5007ec2212aa3efba4517b3}{settings\+::whale}}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{namespacesettings_afa2e499bb4aa47d78074861f12e7c142}{settings\+::shark}}
+\begin{DoxyCompactList}\small\item\em params of populaton positions \end{DoxyCompactList}\end{DoxyCompactItemize}

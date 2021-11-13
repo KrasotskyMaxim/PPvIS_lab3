@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['set_5fage_0',['set_age',['../class_empty.html#a39618de0c3d27e3c76b307e942752146',1,'Empty::set_age()'],['../class_living.html#a2a5c165595ccf6c0971f6182c8c6818c',1,'Living::set_age()'],['../class_plankton.html#a355cba3859427d47e3a3d7b3aa38a710',1,'Plankton::set_age()'],['../class_shark.html#a40ddd3daeae806e4cc4f3c4e5b5704d2',1,'Shark::set_age()'],['../class_whale.html#a03aa1cd20c1ce5e2c8bbd13de268ce4c',1,'Whale::set_age()']]],
+  ['set_5fhp_1',['set_hp',['../class_empty.html#a27fcfd2891e13cdd2e884f270b5144fc',1,'Empty::set_hp()'],['../class_living.html#a046b712648b571ac21d46dcb99b09cc6',1,'Living::set_hp()'],['../class_plankton.html#abdeca0dc34f98dbb6358c8fbfc303bc1',1,'Plankton::set_hp()'],['../class_shark.html#a708e7f5bd501d185f05b93f2196f6de7',1,'Shark::set_hp()'],['../class_whale.html#a071233a417238a81ac1c2546d47e7d97',1,'Whale::set_hp()']]],
+  ['settings_2',['settings',['../namespacesettings.html',1,'']]],
+  ['settings_2ecpp_3',['Settings.cpp',['../_settings_8cpp.html',1,'']]],
+  ['settings_2eh_4',['Settings.h',['../_settings_8h.html',1,'']]],
+  ['sex_5',['Sex',['../namespacesettings.html#ac7ba62a4d58f076f3d2b6d16df15efba',1,'settings']]],
+  ['sexes_6',['SEXES',['../namespacesettings.html#ac7ba62a4d58f076f3d2b6d16df15efbaa132564f39863a09549dba91ffeb9e176',1,'settings']]],
+  ['shark_7',['Shark',['../class_shark.html',1,'Shark'],['../class_shark.html#a710fab01aa95a2613ffcb24326162712',1,'Shark::Shark()']]],
+  ['shark_8',['SHARK',['../namespacesettings.html#a3f699ea76b826ccce774874c93b098c2a66693283525e4f522affeb83257e45db',1,'settings']]],
+  ['shark_9',['shark',['../namespacesettings.html#afa2e499bb4aa47d78074861f12e7c142',1,'settings']]],
+  ['shark_2ecpp_10',['Shark.cpp',['../_shark_8cpp.html',1,'']]],
+  ['shark_2eh_11',['Shark.h',['../_shark_8h.html',1,'']]],
+  ['size_12',['Size',['../namespacesettings.html#a5dbb29b6a46dcc60f5bb2948a394cc95',1,'settings']]],
+  ['sizes_13',['SIZES',['../namespacesettings.html#a5dbb29b6a46dcc60f5bb2948a394cc95a17da635e948df9e6ed4cca4b7a47601b',1,'settings']]],
+  ['small_14',['SMALL',['../namespacesettings.html#a5dbb29b6a46dcc60f5bb2948a394cc95a379b6ac2de272f715f31ef2f9eecd809',1,'settings']]],
+  ['state_15',['State',['../namespacesettings.html#a3f699ea76b826ccce774874c93b098c2',1,'settings']]],
+  ['states_16',['STATES',['../namespacesettings.html#a3f699ea76b826ccce774874c93b098c2a84a53f9db5f99fba1d12ac126299390f',1,'settings']]],
+  ['sums_17',['sums',['../class_living.html#a4f8cfe01b8400fa4e8d4bde30fe7779c',1,'Living']]]
+];

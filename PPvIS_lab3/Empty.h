@@ -1,9 +1,18 @@
+/*!
+	\brief Empty class file
+
+	file contains Empty class for filling empty cells
+*/
 #pragma once
 #include "Living.h"
 #include "Plankton.h"
 using namespace settings;
 
+/*!
+	\brief Empty 
 
+	inherited from Living and contains it`s another methods
+*/
 class Empty : public Living
 {
 public:

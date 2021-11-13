@@ -1,0 +1,185 @@
+\hypertarget{class_predator}{}\doxysection{Predator Class Reference}
+\label{class_predator}\index{Predator@{Predator}}
+
+
+{\ttfamily \#include $<$Predator.\+h$>$}
+
+Inheritance diagram for Predator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_predator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_predator_aa4ec3bc85134a76fd23c64265866ae2b}{Predator}} (int \mbox{\hyperlink{class_living_a563bcb867cc8bc86d3158a1d59b9d112}{row}}, int \mbox{\hyperlink{class_living_ad6e936673b248c85a62d68c55222357d}{column}}, int \mbox{\hyperlink{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}{cell\+\_\+position}}, int \mbox{\hyperlink{class_predator_ac72cbc415ea2943fb610495caf9128f6}{sex}}, int \mbox{\hyperlink{class_predator_ab83ba5e046bda80fdb9bd1d537ec4c6a}{size}}=MEDIUM, int \mbox{\hyperlink{class_predator_af5b747ec6f28088bb137aace54e28cb8}{hp}}=100, int \mbox{\hyperlink{class_predator_ace72baf0ccc773fc7ad171eec5017837}{age}}=0)
+\item 
+virtual int \mbox{\hyperlink{class_predator_a225ac84a68997d21d8f87e1dddde4246}{get\+\_\+hp}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_predator_a5dbb431109481d02d4614d3b25a48445}{get\+\_\+age}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_predator_adff23daafabc92004e52dd08f2f43e8c}{get\+\_\+sex}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_predator_a0b15e0b410439a18b85d7e8ab306e057}{get\+\_\+size}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_predator_ae729cd21ba2376576604d0a18cf8e01a}{set\+\_\+hp}} (int \mbox{\hyperlink{class_predator_af5b747ec6f28088bb137aace54e28cb8}{hp}})=0
+\item 
+virtual void \mbox{\hyperlink{class_predator_aa36bf64c93f221c40a6a4356e68f4c85}{set\+\_\+age}} (int \mbox{\hyperlink{class_predator_ace72baf0ccc773fc7ad171eec5017837}{age}})=0
+\item 
+int \mbox{\hyperlink{class_predator_a55f7e0efc63abe6bac1bf0fc3b13462f}{empty\+\_\+cell\+\_\+for\+\_\+move}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} old\+\_\+ocean, \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} new\+\_\+ocean, int m, int n)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_predator_af5b747ec6f28088bb137aace54e28cb8}{hp}}
+\item 
+int \mbox{\hyperlink{class_predator_ace72baf0ccc773fc7ad171eec5017837}{age}}
+\item 
+int \mbox{\hyperlink{class_predator_ac72cbc415ea2943fb610495caf9128f6}{sex}}
+\item 
+int \mbox{\hyperlink{class_predator_ab83ba5e046bda80fdb9bd1d537ec4c6a}{size}}
+\item 
+int \mbox{\hyperlink{class_predator_a35950e768de4f498159373154434b692}{move}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_predator_aa4ec3bc85134a76fd23c64265866ae2b}\label{class_predator_aa4ec3bc85134a76fd23c64265866ae2b}} 
+\index{Predator@{Predator}!Predator@{Predator}}
+\index{Predator@{Predator}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{Predator()}{Predator()}}
+{\footnotesize\ttfamily Predator\+::\+Predator (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column,  }\item[{int}]{cell\+\_\+position,  }\item[{int}]{sex,  }\item[{int}]{size = {\ttfamily MEDIUM},  }\item[{int}]{hp = {\ttfamily 100},  }\item[{int}]{age = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_predator_a55f7e0efc63abe6bac1bf0fc3b13462f}\label{class_predator_a55f7e0efc63abe6bac1bf0fc3b13462f}} 
+\index{Predator@{Predator}!empty\_cell\_for\_move@{empty\_cell\_for\_move}}
+\index{empty\_cell\_for\_move@{empty\_cell\_for\_move}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{empty\_cell\_for\_move()}{empty\_cell\_for\_move()}}
+{\footnotesize\ttfamily int Predator\+::empty\+\_\+cell\+\_\+for\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{old\+\_\+ocean,  }\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{new\+\_\+ocean,  }\item[{int}]{m,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_predator_a5dbb431109481d02d4614d3b25a48445}\label{class_predator_a5dbb431109481d02d4614d3b25a48445}} 
+\index{Predator@{Predator}!get\_age@{get\_age}}
+\index{get\_age@{get\_age}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{get\_age()}{get\_age()}}
+{\footnotesize\ttfamily virtual int Predator\+::get\+\_\+age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_living_a387aa656982501ffd370c8f43648bdbc}{Living}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_shark_acc92d4ac37b7b3ead86cd8a6a4468790}{Shark}}, and \mbox{\hyperlink{class_whale_a31f2c54c9a2461b21ba059daf3aa96c2}{Whale}}.
+
+\mbox{\Hypertarget{class_predator_a225ac84a68997d21d8f87e1dddde4246}\label{class_predator_a225ac84a68997d21d8f87e1dddde4246}} 
+\index{Predator@{Predator}!get\_hp@{get\_hp}}
+\index{get\_hp@{get\_hp}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{get\_hp()}{get\_hp()}}
+{\footnotesize\ttfamily virtual int Predator\+::get\+\_\+hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_living_a3d7dfb5cfcc5df7ca36d2845f7090e4c}{Living}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_shark_a3e4e318a23e8ce3155a64225c689e626}{Shark}}, and \mbox{\hyperlink{class_whale_a22860d788c06fb4951d7128bcdf600a4}{Whale}}.
+
+\mbox{\Hypertarget{class_predator_adff23daafabc92004e52dd08f2f43e8c}\label{class_predator_adff23daafabc92004e52dd08f2f43e8c}} 
+\index{Predator@{Predator}!get\_sex@{get\_sex}}
+\index{get\_sex@{get\_sex}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{get\_sex()}{get\_sex()}}
+{\footnotesize\ttfamily virtual int Predator\+::get\+\_\+sex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_living_a6633811e44782a59b2117e18822e275f}{Living}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_shark_ac43db352f8f6c652ffdaec077b28a593}{Shark}}, and \mbox{\hyperlink{class_whale_a443f952e83d2cd57fb83c034a86f5c37}{Whale}}.
+
+\mbox{\Hypertarget{class_predator_a0b15e0b410439a18b85d7e8ab306e057}\label{class_predator_a0b15e0b410439a18b85d7e8ab306e057}} 
+\index{Predator@{Predator}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily virtual int Predator\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_living_ab3bb945e923ec145b604cfa190a318f2}{Living}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_shark_a6392015da8c9b5183af546d3ac564962}{Shark}}, and \mbox{\hyperlink{class_whale_aa4952450be7086d8cc56c6312f182d45}{Whale}}.
+
+\mbox{\Hypertarget{class_predator_aa36bf64c93f221c40a6a4356e68f4c85}\label{class_predator_aa36bf64c93f221c40a6a4356e68f4c85}} 
+\index{Predator@{Predator}!set\_age@{set\_age}}
+\index{set\_age@{set\_age}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{set\_age()}{set\_age()}}
+{\footnotesize\ttfamily virtual void Predator\+::set\+\_\+age (\begin{DoxyParamCaption}\item[{int}]{age }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_living_a2a5c165595ccf6c0971f6182c8c6818c}{Living}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_shark_a40ddd3daeae806e4cc4f3c4e5b5704d2}{Shark}}, and \mbox{\hyperlink{class_whale_a03aa1cd20c1ce5e2c8bbd13de268ce4c}{Whale}}.
+
+\mbox{\Hypertarget{class_predator_ae729cd21ba2376576604d0a18cf8e01a}\label{class_predator_ae729cd21ba2376576604d0a18cf8e01a}} 
+\index{Predator@{Predator}!set\_hp@{set\_hp}}
+\index{set\_hp@{set\_hp}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{set\_hp()}{set\_hp()}}
+{\footnotesize\ttfamily virtual void Predator\+::set\+\_\+hp (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_living_a046b712648b571ac21d46dcb99b09cc6}{Living}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_shark_a708e7f5bd501d185f05b93f2196f6de7}{Shark}}, and \mbox{\hyperlink{class_whale_a071233a417238a81ac1c2546d47e7d97}{Whale}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_predator_ace72baf0ccc773fc7ad171eec5017837}\label{class_predator_ace72baf0ccc773fc7ad171eec5017837}} 
+\index{Predator@{Predator}!age@{age}}
+\index{age@{age}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{age}{age}}
+{\footnotesize\ttfamily int Predator\+::age\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_predator_af5b747ec6f28088bb137aace54e28cb8}\label{class_predator_af5b747ec6f28088bb137aace54e28cb8}} 
+\index{Predator@{Predator}!hp@{hp}}
+\index{hp@{hp}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{hp}{hp}}
+{\footnotesize\ttfamily int Predator\+::hp\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_predator_a35950e768de4f498159373154434b692}\label{class_predator_a35950e768de4f498159373154434b692}} 
+\index{Predator@{Predator}!move@{move}}
+\index{move@{move}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{move}{move}}
+{\footnotesize\ttfamily int Predator\+::move\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_predator_ac72cbc415ea2943fb610495caf9128f6}\label{class_predator_ac72cbc415ea2943fb610495caf9128f6}} 
+\index{Predator@{Predator}!sex@{sex}}
+\index{sex@{sex}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{sex}{sex}}
+{\footnotesize\ttfamily int Predator\+::sex\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_predator_ab83ba5e046bda80fdb9bd1d537ec4c6a}\label{class_predator_ab83ba5e046bda80fdb9bd1d537ec4c6a}} 
+\index{Predator@{Predator}!size@{size}}
+\index{size@{size}!Predator@{Predator}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int Predator\+::size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_predator_8h}{Predator.\+h}}\item 
+\mbox{\hyperlink{_predator_8cpp}{Predator.\+cpp}}\end{DoxyCompactItemize}

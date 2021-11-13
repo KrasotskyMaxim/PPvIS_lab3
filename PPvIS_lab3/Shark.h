@@ -1,9 +1,20 @@
+/*!
+	\brief Shark class file
+
+	file contains Shark class that is one of the predators
+*/
 #pragma once
 #include "Settings.h"
 #include "Living.h"
 #include "Predator.h"
 #include "Empty.h"
 
+
+/*!
+	\brief Predator
+
+	inherited from Predator and is one of the predators that eat plankton
+*/
 class Shark : public Predator
 {
 public:

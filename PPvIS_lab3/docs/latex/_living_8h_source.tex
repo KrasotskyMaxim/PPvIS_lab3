@@ -1,0 +1,34 @@
+\hypertarget{_living_8h_source}{}\doxysection{Living.\+h}
+\mbox{\hyperlink{_living_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_settings_8h}{Settings.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }\mbox{\hyperlink{namespacesettings}{settings}};}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_living}{Living}};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{typedef} \mbox{\hyperlink{class_living}{Living}}* \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}[\mbox{\hyperlink{namespacesettings_af7089d8d7a382835b1a4453a15d83538}{OCEAN\_LENGHT}}][\mbox{\hyperlink{namespacesettings_a9f67df62d48a9cb23fcab1fb13316121}{OCEAN\_WIDTH}}][\mbox{\hyperlink{namespacesettings_a7f91d0e13a6b75ddf51c1dce6804a5fe}{LIFE\_IN\_CELL}}]; }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_living}{Living}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \textcolor{keyword}{virtual} \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{State}} \mbox{\hyperlink{class_living_a32fd2a4e60cd14b99ce8d8aa92a0004e}{who}}() = 0;}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_living_a6197d9e1d03aca11dc8c63d2a5e42d6e}{next}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} new\_ocean) = 0;}
+\DoxyCodeLine{24     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_a3d7dfb5cfcc5df7ca36d2845f7090e4c}{get\_hp}}() = 0;}
+\DoxyCodeLine{25     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_a6633811e44782a59b2117e18822e275f}{get\_sex}}() = 0;}
+\DoxyCodeLine{26     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_a387aa656982501ffd370c8f43648bdbc}{get\_age}}() = 0;}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_ab3bb945e923ec145b604cfa190a318f2}{get\_size}}() = 0;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_living_a046b712648b571ac21d46dcb99b09cc6}{set\_hp}}(\textcolor{keywordtype}{int} hp) = 0;}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_living_a2a5c165595ccf6c0971f6182c8c6818c}{set\_age}}(\textcolor{keywordtype}{int} age) = 0;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_living_a4f8cfe01b8400fa4e8d4bde30fe7779c}{sums}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, \textcolor{keywordtype}{int} sm[]);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_a563bcb867cc8bc86d3158a1d59b9d112}{row}}, \mbox{\hyperlink{class_living_ad6e936673b248c85a62d68c55222357d}{column}}, \mbox{\hyperlink{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}{cell\_position}};}
+\DoxyCodeLine{36     }
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+
+\end{DoxyCode}

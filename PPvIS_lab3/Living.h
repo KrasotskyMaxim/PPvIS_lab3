@@ -1,11 +1,21 @@
+/*!
+	\brief abstract parent class file
+
+	contains parent class Living and Ocean creation
+*/
 #pragma once
 #include "Settings.h"
 using namespace settings;
 
 class Living;
 
-typedef Living* Ocean[OCEAN_LENGHT][OCEAN_WIDTH][LIFE_IN_CELL];
+typedef Living* Ocean[OCEAN_LENGHT][OCEAN_WIDTH][LIFE_IN_CELL]; ///< template for all ocean models
 
+/*!
+	\brief parent class Living
+
+	contains interface for out population models (plankton, shark, whale, etc...)
+*/
 class Living
 {
 public:
