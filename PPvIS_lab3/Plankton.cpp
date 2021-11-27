@@ -16,6 +16,7 @@ void Plankton::next(Ocean old_ocean, Ocean new_ocean)
         new_world = new Empty(row, column, cell_position);
     else
     {
+        Model model;
         for (int m = -1; m < 2; m++)
         {
             for (int n = -1; n < 2; n++)
@@ -23,7 +24,7 @@ void Plankton::next(Ocean old_ocean, Ocean new_ocean)
                 int new_row = row - m;
                 int new_column = column - n;
 
-                if (border(new_row, new_column))
+                if (model.border(new_row, new_column))
                 {
                     old_ocean[new_row][new_column][0]->sums(old_ocean, sum);
 

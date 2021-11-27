@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "PPvIS_lab3", "index.html", [
+    [ "Ocean model", "md__c___users__maks_source_repos__p_pv_i_s_lab3__p_pv_i_s_lab3__r_e_a_d_m_e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [

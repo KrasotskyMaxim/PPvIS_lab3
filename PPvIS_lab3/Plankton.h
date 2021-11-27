@@ -6,6 +6,7 @@
 #pragma once
 #include "Living.h"
 #include "Empty.h"
+#include "Model.h"
 
 
 /*!

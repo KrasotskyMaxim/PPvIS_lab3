@@ -5,6 +5,7 @@ When doing this option, I had to develop a game model of the oceanic world. Actu
 - Eating
 - Reproduction
 - Death from old age or starving
+  
 ---
 The behavior of the inhabitants in each of the stages will depend on the type of inhabitant. There are two main types of inhabitants with the following properties:
 

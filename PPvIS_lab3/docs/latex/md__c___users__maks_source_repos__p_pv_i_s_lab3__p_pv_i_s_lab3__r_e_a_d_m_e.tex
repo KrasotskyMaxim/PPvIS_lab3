@@ -1,0 +1,67 @@
+When doing this option, I had to develop a game model of the oceanic world. Actually, the world in which the inhabitants of the ocean live, is a rectangular field of arbitrary size. The rectangular field is divided into equal squares (cells), and each cell can have a maximum of four inhabitants. Modeling of life in such a world takes place in a step-\/by-\/step mode, in which each step contains the following clearly defined stages\+:
+
+
+\begin{DoxyItemize}
+\item Moving
+\item Eating
+\item Reproduction
+\item Death from old age or starving
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ The behavior of the inhabitants in each of the stages will depend on the type of inhabitant. There are two main types of inhabitants with the following properties\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_plankton}{Plankton}}\+:
+\begin{DoxyItemize}
+\item only one plant can be in the cell
+\item don\`{}t move
+\item has hitpoints
+\begin{DoxyItemize}
+\item waste some hp evepy step $\ast$(dying effect)$\ast$
+\item plankton can multiply to a neighboring cell even if there is already another plankton with an incomplete percentage of life $\ast$(in this case, reproduction will update life to 100)$\ast$
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Predator\+:
+\begin{DoxyItemize}
+\item moves $\ast$(the number of cells that can be moved depends on the type inhabitant)$\ast$;
+\item has a size $\ast$(depending on the type of inhabitant)$\ast$\+:
+\begin{DoxyItemize}
+\item a larger predator needs to eat more;
+\item a larger predator can eat a larger inhabitant of the ocean;
+\end{DoxyItemize}
+\item has a lifetime;
+\item can die if a certain number of moves are hungry;
+\item feeds on plankton or another predator $\ast$(depending on the gastronomic preferences of the inhabitant of the ocean)$\ast$\+:
+\begin{DoxyItemize}
+\item the victim must be on the same cell;
+\item always eats the whole inhabitant, if he did not run away;
+\end{DoxyItemize}
+\item reproduction\+:
+\begin{DoxyItemize}
+\item need a pair of individuals to reproduce on the same cell;
+\item the cub is born immediately on the same cell.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ Having studied these rules, I needed to develop an object model of the subject area and a program that would carry out modeling of the process of life. And the inhabitants of the world will be specific types of inhabitants. For example, a shark is a khishch-\/ A medium-\/sized nick that can move 2 cells per turn feeds on planktonomb but not whales. As can be seen from the example, a particular species of inhabitant may have some specialty. Qualities and some special behavior. This does not apply to plankton, because there should be only one type of plankton in the model. When developing the class hierarchy, an attribute of any object-\/oriented language, such as inheritance, was applied.
+
+\DoxyHorRuler{0}
+ The developed object model meet the following requirements\+:
+\begin{DoxyItemize}
+\item other classes of species of inhabitants of the ocean $\ast$(quantity at the discretion of the developer)$\ast$
+\item occupant classes should be hierarchical so that the general properties and logic of work described by a superclass
+\item Introduction of the description of the ocean world $\ast$(playing field)$\ast$
+\item provides a mechanism for modeling the ocean world
+\item classes that provide unloading of the model from a text file
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ A program implemented on the basis of the developed model should\+:
+\begin{DoxyItemize}
+\item receive the name of the input file with a description of the world and a description of the operating mode $\ast$(automatical simulation or step-\/by-\/step simulation pending confirmation from user)$\ast$ via a command argument;
+\item output to the console the state of the playing field on each move. 
+\end{DoxyItemize}
