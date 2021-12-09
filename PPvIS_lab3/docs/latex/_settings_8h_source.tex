@@ -22,36 +22,33 @@
 \DoxyCodeLine{28     \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespacesettings_a6c6bcace2f863d38fbc5860744279621}{DWHALE}} = 9;}
 \DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{namespacesettings_aca0c44f1d3e93fcd20768cefe88fd4e6}{CYCLES}};}
 \DoxyCodeLine{30 }
-\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacesettings_a38b03cb09d38a0dfc1809a7c3f48dcba}{ocean\_model}}(std::string \mbox{\hyperlink{namespacesettings_a082c4741f3750c712bd4cae91427ef82}{path}});}
-\DoxyCodeLine{48     \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespacesettings_a6b9a72a925e6c344f93e08e037cc1e6c}{border}}(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
-\DoxyCodeLine{58     \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespacesettings_a07e9c40d189e8c742a68454675deafee}{changed\_cell}}(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column, \textcolor{keywordtype}{int} cell\_position);}
-\DoxyCodeLine{59 }
-\DoxyCodeLine{60     \textcolor{keyword}{enum} \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{State}}}
-\DoxyCodeLine{61     \{}
-\DoxyCodeLine{62         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a388db07b18b866eb9c9dc9a0d15b49ed}{EMPTY}},}
-\DoxyCodeLine{63         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a209c39729811370eec1da898fcafb903}{PLANKTON}},}
-\DoxyCodeLine{64         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a66693283525e4f522affeb83257e45db}{SHARK}},}
-\DoxyCodeLine{65         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2ab45d6c9b9565bfcf004948626703e6de}{WHALE}},}
-\DoxyCodeLine{66         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a84a53f9db5f99fba1d12ac126299390f}{STATES}}}
-\DoxyCodeLine{67     \};}
-\DoxyCodeLine{68 }
-\DoxyCodeLine{69     \textcolor{keyword}{enum} \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95}{Size}}}
-\DoxyCodeLine{70     \{}
-\DoxyCodeLine{71         \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95a379b6ac2de272f715f31ef2f9eecd809}{SMALL}},}
-\DoxyCodeLine{72         \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95ad811fb155363f132589e7cc5344be2e9}{MEDIUM}},}
-\DoxyCodeLine{73         \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95ac0722e6635fae2288e4e09ccca82008d}{BIG}},}
-\DoxyCodeLine{74         \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95a17da635e948df9e6ed4cca4b7a47601b}{SIZES}}}
-\DoxyCodeLine{75     \};}
-\DoxyCodeLine{76 }
-\DoxyCodeLine{77     \textcolor{keyword}{enum} \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efba}{Sex}}}
-\DoxyCodeLine{78     \{}
-\DoxyCodeLine{79         \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaafdc856bdf75f1cbf57a582ef9c6459fd}{FEMALE}},}
-\DoxyCodeLine{80         \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaa57fc4eb509be3487f8987b710355f777}{MALE}},}
-\DoxyCodeLine{81         \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaa132564f39863a09549dba91ffeb9e176}{SEXES}}}
-\DoxyCodeLine{82     \};}
-\DoxyCodeLine{83 }
-\DoxyCodeLine{84     std::vector<std::vector<int>> \mbox{\hyperlink{namespacesettings_a176e15dae5bea7edb18b5696b55e0f62}{plankton}}, \mbox{\hyperlink{namespacesettings_acd154092c5007ec2212aa3efba4517b3}{whale}}, \mbox{\hyperlink{namespacesettings_afa2e499bb4aa47d78074861f12e7c142}{shark}}; }
-\DoxyCodeLine{85 \}}
-\DoxyCodeLine{86 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keyword}{enum} \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{State}}}
+\DoxyCodeLine{33     \{}
+\DoxyCodeLine{34         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a388db07b18b866eb9c9dc9a0d15b49ed}{EMPTY}},}
+\DoxyCodeLine{35         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a209c39729811370eec1da898fcafb903}{PLANKTON}},}
+\DoxyCodeLine{36         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a66693283525e4f522affeb83257e45db}{SHARK}},}
+\DoxyCodeLine{37         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2ab45d6c9b9565bfcf004948626703e6de}{WHALE}},}
+\DoxyCodeLine{38         \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a84a53f9db5f99fba1d12ac126299390f}{STATES}}}
+\DoxyCodeLine{39     \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keyword}{enum} \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95}{Size}}}
+\DoxyCodeLine{42     \{}
+\DoxyCodeLine{43         \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95a379b6ac2de272f715f31ef2f9eecd809}{SMALL}},}
+\DoxyCodeLine{44         \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95ad811fb155363f132589e7cc5344be2e9}{MEDIUM}},}
+\DoxyCodeLine{45         \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95ac0722e6635fae2288e4e09ccca82008d}{BIG}},}
+\DoxyCodeLine{46         \mbox{\hyperlink{namespacesettings_a5dbb29b6a46dcc60f5bb2948a394cc95a17da635e948df9e6ed4cca4b7a47601b}{SIZES}}}
+\DoxyCodeLine{47     \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keyword}{enum} \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efba}{Sex}}}
+\DoxyCodeLine{50     \{}
+\DoxyCodeLine{51         \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaafdc856bdf75f1cbf57a582ef9c6459fd}{FEMALE}},}
+\DoxyCodeLine{52         \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaa57fc4eb509be3487f8987b710355f777}{MALE}},}
+\DoxyCodeLine{53         \mbox{\hyperlink{namespacesettings_ac7ba62a4d58f076f3d2b6d16df15efbaa132564f39863a09549dba91ffeb9e176}{SEXES}}}
+\DoxyCodeLine{54     \};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     std::vector<std::vector<int>> \mbox{\hyperlink{namespacesettings_a176e15dae5bea7edb18b5696b55e0f62}{plankton}}, \mbox{\hyperlink{namespacesettings_acd154092c5007ec2212aa3efba4517b3}{whale}}, \mbox{\hyperlink{namespacesettings_afa2e499bb4aa47d78074861f12e7c142}{shark}}; }
+\DoxyCodeLine{57 \}}
+\DoxyCodeLine{58 }
 
 \end{DoxyCode}

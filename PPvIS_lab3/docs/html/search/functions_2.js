@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['eden_0',['eden',['../_p_pv_i_s__lab3_8cpp.html#a76e9dfea4baa1333e4ef12c2e00b3e32',1,'PPvIS_lab3.cpp']]],
-  ['eden_5fplankton_1',['eden_plankton',['../_p_pv_i_s__lab3_8cpp.html#a4b518191a4b321b454a8656b4e6630b1',1,'PPvIS_lab3.cpp']]],
-  ['eden_5fshark_2',['eden_shark',['../_p_pv_i_s__lab3_8cpp.html#a8340a4e9c3d8ce725b5e330f5f2f4549',1,'PPvIS_lab3.cpp']]],
-  ['eden_5fwhale_3',['eden_whale',['../_p_pv_i_s__lab3_8cpp.html#aa4322acb95df0c3f20e55d23ec3bc3c7',1,'PPvIS_lab3.cpp']]],
+  ['eden_0',['eden',['../class_model.html#a80fc80140a84a16d07bee90267ede5f5',1,'Model']]],
+  ['eden_5fplankton_1',['eden_plankton',['../class_model.html#a50244869d0cca42b87b438b8ffbf9305',1,'Model']]],
+  ['eden_5fshark_2',['eden_shark',['../class_model.html#a4faa2680d231c0151ecf108e334e998e',1,'Model']]],
+  ['eden_5fwhale_3',['eden_whale',['../class_model.html#ab77df2be5e23ea5a536a5e0ce63908f3',1,'Model']]],
   ['empty_4',['Empty',['../class_empty.html#af5143ab506cef58fef76b81bd90a9c1c',1,'Empty']]]
 ];

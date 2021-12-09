@@ -1,0 +1,238 @@
+\hypertarget{class_model}{}\doxysection{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\item 
+\mbox{\hyperlink{class_model_a1e47b338ca8b4f60a5460e4658dd3443}{Model}} (string path)
+\item 
+void \mbox{\hyperlink{class_model_aef475e4724f28b31c2dabb4525e3d55e}{run}} ()
+\item 
+void \mbox{\hyperlink{class_model_a80302b53d90cb73cf7e0800fd6f3fba9}{init}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean)
+\item 
+void \mbox{\hyperlink{class_model_a80fc80140a84a16d07bee90267ede5f5}{eden}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean)
+\item 
+void \mbox{\hyperlink{class_model_a50244869d0cca42b87b438b8ffbf9305}{eden\+\_\+plankton}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, vector$<$ vector$<$ int $>$ $>$ params)
+\item 
+void \mbox{\hyperlink{class_model_a4faa2680d231c0151ecf108e334e998e}{eden\+\_\+shark}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, vector$<$ vector$<$ int $>$ $>$ params)
+\item 
+void \mbox{\hyperlink{class_model_ab77df2be5e23ea5a536a5e0ce63908f3}{eden\+\_\+whale}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, vector$<$ vector$<$ int $>$ $>$ params)
+\item 
+void \mbox{\hyperlink{class_model_a2a813ec8be2a615635af0a26ddbcab97}{update}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} new\+\_\+ocean, \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} old\+\_\+ocean)
+\item 
+void \mbox{\hyperlink{class_model_a54068c88e17b6bf3f7b5e0b932e97cba}{clear}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean)
+\item 
+void \mbox{\hyperlink{class_model_a7bb5aa01f0ef28b7e3582ef374388eb9}{view}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, int CYCLE)
+\item 
+void \mbox{\hyperlink{class_model_a296ecc0b04bf27ac2066cd8e0ac39acb}{update\+\_\+reproduct\+\_\+animals}} (\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean)
+\item 
+void \mbox{\hyperlink{class_model_a448888e2c3f6b46d665effc4914b9ba6}{ocean\+\_\+model}} (std\+::string path)
+\item 
+bool \mbox{\hyperlink{class_model_a7d064cc60c25ecb2cf5fb2d2f51e6634}{border}} (int row, int column)
+\item 
+bool \mbox{\hyperlink{class_model_a1d295284f585c69ea184a12794e130f6}{changed\+\_\+cell}} (int row, int column, int cell\+\_\+position)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_model_a1e47b338ca8b4f60a5460e4658dd3443}\label{class_model_a1e47b338ca8b4f60a5460e4658dd3443}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_a7d064cc60c25ecb2cf5fb2d2f51e6634}\label{class_model_a7d064cc60c25ecb2cf5fb2d2f51e6634}} 
+\index{Model@{Model}!border@{border}}
+\index{border@{border}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{border()}{border()}}
+{\footnotesize\ttfamily bool Model\+::border (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+check ocean model border
+
+check if current cell depends on the ocean model and it can be reached
+
+
+\begin{DoxyParams}{Parameters}
+{\em row,column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true-\/if ocean model cell, false-\/if cell doesn\`{}t depend of ocean model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a1d295284f585c69ea184a12794e130f6}\label{class_model_a1d295284f585c69ea184a12794e130f6}} 
+\index{Model@{Model}!changed\_cell@{changed\_cell}}
+\index{changed\_cell@{changed\_cell}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{changed\_cell()}{changed\_cell()}}
+{\footnotesize\ttfamily bool Model\+::changed\+\_\+cell (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column,  }\item[{int}]{cell\+\_\+position }\end{DoxyParamCaption})}
+
+answer if cell was changing
+
+receive coordinates of cell, ckeck and answer if cell will be change
+
+
+\begin{DoxyParams}{Parameters}
+{\em row,column,cell\+\_\+position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true-\/if cell was changing, false-\/if cell didn\`{}t changed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a54068c88e17b6bf3f7b5e0b932e97cba}\label{class_model_a54068c88e17b6bf3f7b5e0b932e97cba}} 
+\index{Model@{Model}!clear@{clear}}
+\index{clear@{clear}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Model\+::clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean }\end{DoxyParamCaption})}
+
+clear old\+\_\+ocean after updating
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocean} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a80fc80140a84a16d07bee90267ede5f5}\label{class_model_a80fc80140a84a16d07bee90267ede5f5}} 
+\index{Model@{Model}!eden@{eden}}
+\index{eden@{eden}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{eden()}{eden()}}
+{\footnotesize\ttfamily void Model\+::eden (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean }\end{DoxyParamCaption})}
+
+populate ocean model in general case
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocean} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a50244869d0cca42b87b438b8ffbf9305}\label{class_model_a50244869d0cca42b87b438b8ffbf9305}} 
+\index{Model@{Model}!eden\_plankton@{eden\_plankton}}
+\index{eden\_plankton@{eden\_plankton}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{eden\_plankton()}{eden\_plankton()}}
+{\footnotesize\ttfamily void Model\+::eden\+\_\+plankton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean,  }\item[{vector$<$ vector$<$ int $>$ $>$}]{params }\end{DoxyParamCaption})}
+
+populate ocean model with planktons
+
+receive vector of planktons coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocean,params} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a4faa2680d231c0151ecf108e334e998e}\label{class_model_a4faa2680d231c0151ecf108e334e998e}} 
+\index{Model@{Model}!eden\_shark@{eden\_shark}}
+\index{eden\_shark@{eden\_shark}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{eden\_shark()}{eden\_shark()}}
+{\footnotesize\ttfamily void Model\+::eden\+\_\+shark (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean,  }\item[{vector$<$ vector$<$ int $>$ $>$}]{params }\end{DoxyParamCaption})}
+
+populate ocean model with sharks
+
+receive vector of sharks coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocean,params} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_ab77df2be5e23ea5a536a5e0ce63908f3}\label{class_model_ab77df2be5e23ea5a536a5e0ce63908f3}} 
+\index{Model@{Model}!eden\_whale@{eden\_whale}}
+\index{eden\_whale@{eden\_whale}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{eden\_whale()}{eden\_whale()}}
+{\footnotesize\ttfamily void Model\+::eden\+\_\+whale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean,  }\item[{vector$<$ vector$<$ int $>$ $>$}]{params }\end{DoxyParamCaption})}
+
+populate ocean model with whales
+
+receive vector of whales coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocean,params} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a80302b53d90cb73cf7e0800fd6f3fba9}\label{class_model_a80302b53d90cb73cf7e0800fd6f3fba9}} 
+\index{Model@{Model}!init@{init}}
+\index{init@{init}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Model\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean }\end{DoxyParamCaption})}
+
+initialize ocean model
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocean} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a448888e2c3f6b46d665effc4914b9ba6}\label{class_model_a448888e2c3f6b46d665effc4914b9ba6}} 
+\index{Model@{Model}!ocean\_model@{ocean\_model}}
+\index{ocean\_model@{ocean\_model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{ocean\_model()}{ocean\_model()}}
+{\footnotesize\ttfamily void Model\+::ocean\+\_\+model (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+ocean model settings from file
+
+get ocean model settings from .txt file and set it data into variables
+
+\textbackslash{}aram path \mbox{\Hypertarget{class_model_aef475e4724f28b31c2dabb4525e3d55e}\label{class_model_aef475e4724f28b31c2dabb4525e3d55e}} 
+\index{Model@{Model}!run@{run}}
+\index{run@{run}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Model\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_a2a813ec8be2a615635af0a26ddbcab97}\label{class_model_a2a813ec8be2a615635af0a26ddbcab97}} 
+\index{Model@{Model}!update@{update}}
+\index{update@{update}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Model\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{new\+\_\+ocean,  }\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{old\+\_\+ocean }\end{DoxyParamCaption})}
+
+update the ocean model to the next life cycle
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+\_\+ocean,new\+\_\+ocean} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a296ecc0b04bf27ac2066cd8e0ac39acb}\label{class_model_a296ecc0b04bf27ac2066cd8e0ac39acb}} 
+\index{Model@{Model}!update\_reproduct\_animals@{update\_reproduct\_animals}}
+\index{update\_reproduct\_animals@{update\_reproduct\_animals}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{update\_reproduct\_animals()}{update\_reproduct\_animals()}}
+{\footnotesize\ttfamily void Model\+::update\+\_\+reproduct\+\_\+animals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean }\end{DoxyParamCaption})}
+
+update ocean model according to new animals after reprodiction
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocean} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a7bb5aa01f0ef28b7e3582ef374388eb9}\label{class_model_a7bb5aa01f0ef28b7e3582ef374388eb9}} 
+\index{Model@{Model}!view@{view}}
+\index{view@{view}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily void Model\+::view (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}}}]{ocean,  }\item[{int}]{CYCLE }\end{DoxyParamCaption})}
+
+show in console the ocealn model condition on every cycle
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocean,CYCLE} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Maks/source/repos/\+PPv\+IS\+\_\+lab3/\+PPv\+IS\+\_\+lab3/\mbox{\hyperlink{_model_8h}{Model.\+h}}\item 
+C\+:/\+Users/\+Maks/source/repos/\+PPv\+IS\+\_\+lab3/\+PPv\+IS\+\_\+lab3/\mbox{\hyperlink{_model_8cpp}{Model.\+cpp}}\end{DoxyCompactItemize}

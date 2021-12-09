@@ -4,6 +4,7 @@ var hierarchy =
       [ "Empty", "class_empty.html", null ],
       [ "Plankton", "class_plankton.html", null ]
     ] ],
+    [ "Model", "class_model.html", null ],
     [ "Predator", null, [
       [ "Shark", "class_shark.html", null ],
       [ "Whale", "class_whale.html", null ]

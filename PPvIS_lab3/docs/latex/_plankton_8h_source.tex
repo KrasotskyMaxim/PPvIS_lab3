@@ -5,31 +5,32 @@
 \DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma once}}
 \DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_living_8h}{Living.h}}"{}}}
 \DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_empty_8h}{Empty.h}}"{}}}
-\DoxyCodeLine{9 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_model_8h}{Model.h}}"{}}}
 \DoxyCodeLine{10 }
-\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_plankton}{Plankton}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_living}{Living}}}
-\DoxyCodeLine{17 \{}
-\DoxyCodeLine{18     \textcolor{keywordtype}{int} hp;}
-\DoxyCodeLine{19 \textcolor{keyword}{public}:}
-\DoxyCodeLine{20 }
-\DoxyCodeLine{21     \mbox{\hyperlink{class_plankton_a20d5a834d2f53eb4f32002725b3e6704}{Plankton}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_a563bcb867cc8bc86d3158a1d59b9d112}{row}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_ad6e936673b248c85a62d68c55222357d}{column}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}{cell\_position}}, \textcolor{keywordtype}{int} hp = 100)}
-\DoxyCodeLine{22     \{}
-\DoxyCodeLine{23         this-\/>row = \mbox{\hyperlink{class_living_a563bcb867cc8bc86d3158a1d59b9d112}{row}};}
-\DoxyCodeLine{24         this-\/>column = \mbox{\hyperlink{class_living_ad6e936673b248c85a62d68c55222357d}{column}};}
-\DoxyCodeLine{25         this-\/>cell\_position = \mbox{\hyperlink{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}{cell\_position}};}
-\DoxyCodeLine{26         this-\/>hp = hp;}
-\DoxyCodeLine{27     \}}
-\DoxyCodeLine{28 }
-\DoxyCodeLine{29     \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{State}} \mbox{\hyperlink{class_plankton_a2aff4f58e697963010eeab9ffed5bc50}{who}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a209c39729811370eec1da898fcafb903}{PLANKTON}}; \}}
-\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_plankton_ac2453b1d1eb6db0946a7a8f4078b4f10}{next}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} old\_ocean, \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} new\_ocean);}
-\DoxyCodeLine{31     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_plankton_acc6d81a5ceeaf6e6c90fe6dd068ffcf4}{get\_hp}}() \{ \textcolor{keywordflow}{return} this-\/>hp; \}}
-\DoxyCodeLine{32     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_plankton_ad85de6eae48d96dc686146e1d2db9410}{get\_sex}}() \{ \textcolor{keywordflow}{return} 0; \}}
-\DoxyCodeLine{33     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_plankton_ac20fc6dac800c9c11b1bc4ae2fe4be4e}{get\_age}}() \{ \textcolor{keywordflow}{return} 0; \}}
-\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_plankton_aa34335c0bb660cf4128f0928c8f19d2b}{get\_size}}() \{ \textcolor{keywordflow}{return} 0; \}}
-\DoxyCodeLine{35 }
-\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_plankton_abdeca0dc34f98dbb6358c8fbfc303bc1}{set\_hp}}(\textcolor{keywordtype}{int} hp) \{ this-\/>hp = hp; \}}
-\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_plankton_a355cba3859427d47e3a3d7b3aa38a710}{set\_age}}(\textcolor{keywordtype}{int} age) \{\}}
-\DoxyCodeLine{38 \};}
-\DoxyCodeLine{39 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_plankton}{Plankton}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_living}{Living}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} hp;}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \mbox{\hyperlink{class_plankton_a20d5a834d2f53eb4f32002725b3e6704}{Plankton}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_a563bcb867cc8bc86d3158a1d59b9d112}{row}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_ad6e936673b248c85a62d68c55222357d}{column}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}{cell\_position}}, \textcolor{keywordtype}{int} hp = 100)}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24         this-\/>row = \mbox{\hyperlink{class_living_a563bcb867cc8bc86d3158a1d59b9d112}{row}};}
+\DoxyCodeLine{25         this-\/>column = \mbox{\hyperlink{class_living_ad6e936673b248c85a62d68c55222357d}{column}};}
+\DoxyCodeLine{26         this-\/>cell\_position = \mbox{\hyperlink{class_living_aebd3921d91a10b2a6a0aec64c03f81a7}{cell\_position}};}
+\DoxyCodeLine{27         this-\/>hp = hp;}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2}{State}} \mbox{\hyperlink{class_plankton_a2aff4f58e697963010eeab9ffed5bc50}{who}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesettings_a3f699ea76b826ccce774874c93b098c2a209c39729811370eec1da898fcafb903}{PLANKTON}}; \}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_plankton_ac2453b1d1eb6db0946a7a8f4078b4f10}{next}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} old\_ocean, \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} new\_ocean);}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_plankton_acc6d81a5ceeaf6e6c90fe6dd068ffcf4}{get\_hp}}() \{ \textcolor{keywordflow}{return} this-\/>hp; \}}
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_plankton_ad85de6eae48d96dc686146e1d2db9410}{get\_sex}}() \{ \textcolor{keywordflow}{return} 0; \}}
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_plankton_ac20fc6dac800c9c11b1bc4ae2fe4be4e}{get\_age}}() \{ \textcolor{keywordflow}{return} 0; \}}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_plankton_aa34335c0bb660cf4128f0928c8f19d2b}{get\_size}}() \{ \textcolor{keywordflow}{return} 0; \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_plankton_abdeca0dc34f98dbb6358c8fbfc303bc1}{set\_hp}}(\textcolor{keywordtype}{int} hp) \{ this-\/>hp = hp; \}}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_plankton_a355cba3859427d47e3a3d7b3aa38a710}{set\_age}}(\textcolor{keywordtype}{int} age) \{\}}
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
 
 \end{DoxyCode}

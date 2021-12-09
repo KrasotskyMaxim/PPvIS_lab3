@@ -1,11 +1,15 @@
 var files_dup =
 [
-    [ "Empty.cpp", "_empty_8cpp.html", "_empty_8cpp" ],
+    [ "Empty.cpp", "_empty_8cpp.html", null ],
     [ "Empty.h", "_empty_8h.html", [
       [ "Empty", "class_empty.html", "class_empty" ]
     ] ],
     [ "Living.cpp", "_living_8cpp.html", null ],
     [ "Living.h", "_living_8h.html", "_living_8h" ],
+    [ "Model.cpp", "_model_8cpp.html", null ],
+    [ "Model.h", "_model_8h.html", [
+      [ "Model", "class_model.html", "class_model" ]
+    ] ],
     [ "Plankton.cpp", "_plankton_8cpp.html", "_plankton_8cpp" ],
     [ "Plankton.h", "_plankton_8h.html", [
       [ "Plankton", "class_plankton.html", "class_plankton" ]

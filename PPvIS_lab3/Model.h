@@ -1,3 +1,9 @@
+/**
+	\brief file with the main functions for manage the ocean model
+
+	This file contains main function and ither methods for generate, build,
+	populate, view and clear ocean model.
+*/
 #pragma once
 #include <iostream>
 #include <iomanip>

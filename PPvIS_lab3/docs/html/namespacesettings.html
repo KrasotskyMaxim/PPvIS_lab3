@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('namespacesettings.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">settings Namespace Reference</div></div>
 </div><!--header-->
@@ -116,15 +115,6 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacesettings.html#ac7ba62a4d58f076f3d2b6d16df15efbaa132564f39863a09549dba91ffeb9e176">SEXES</a>
  }</td></tr>
 <tr class="separator:ac7ba62a4d58f076f3d2b6d16df15efba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a38b03cb09d38a0dfc1809a7c3f48dcba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesettings.html#a38b03cb09d38a0dfc1809a7c3f48dcba">ocean_model</a> (std::string <a class="el" href="namespacesettings.html#a082c4741f3750c712bd4cae91427ef82">path</a>)</td></tr>
-<tr class="separator:a38b03cb09d38a0dfc1809a7c3f48dcba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b9a72a925e6c344f93e08e037cc1e6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesettings.html#a6b9a72a925e6c344f93e08e037cc1e6c">border</a> (int row, int column)</td></tr>
-<tr class="separator:a6b9a72a925e6c344f93e08e037cc1e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07e9c40d189e8c742a68454675deafee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesettings.html#a07e9c40d189e8c742a68454675deafee">changed_cell</a> (int row, int column, int cell_position)</td></tr>
-<tr class="separator:a07e9c40d189e8c742a68454675deafee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -220,108 +210,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a3f699ea76b826ccce774874c93b098c2ab45d6c9b9565bfcf004948626703e6de" name="a3f699ea76b826ccce774874c93b098c2ab45d6c9b9565bfcf004948626703e6de"></a>WHALE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3f699ea76b826ccce774874c93b098c2a84a53f9db5f99fba1d12ac126299390f" name="a3f699ea76b826ccce774874c93b098c2a84a53f9db5f99fba1d12ac126299390f"></a>STATES&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a6b9a72a925e6c344f93e08e037cc1e6c" name="a6b9a72a925e6c344f93e08e037cc1e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b9a72a925e6c344f93e08e037cc1e6c">&#9670;&nbsp;</a></span>border()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool settings::border </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>row</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>column</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >check ocean model border</p>
-<p >check if current cell depends on the ocean model and it can be reached</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">row,column</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true-if ocean model cell, false-if cell doesn`t depend of ocean model </dd></dl>
-
-</div>
-</div>
-<a id="a07e9c40d189e8c742a68454675deafee" name="a07e9c40d189e8c742a68454675deafee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07e9c40d189e8c742a68454675deafee">&#9670;&nbsp;</a></span>changed_cell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool settings::changed_cell </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>row</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>column</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cell_position</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >answer if cell was changing</p>
-<p >receive coordinates of cell, ckeck and answer if cell will be change</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">row,column,cell_position</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true-if cell was changing, false-if cell didn`t changed </dd></dl>
-
-</div>
-</div>
-<a id="a38b03cb09d38a0dfc1809a7c3f48dcba" name="a38b03cb09d38a0dfc1809a7c3f48dcba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38b03cb09d38a0dfc1809a7c3f48dcba">&#9670;&nbsp;</a></span>ocean_model()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void settings::ocean_model </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >ocean model settings from file</p>
-<p >get ocean model settings from .txt file and set it data into variables</p>
-<p >\aram path </p>
 
 </div>
 </div>

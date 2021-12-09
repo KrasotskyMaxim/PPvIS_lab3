@@ -19,9 +19,6 @@ var namespaces_dup =
         [ "WHALE", "namespacesettings.html#a3f699ea76b826ccce774874c93b098c2ab45d6c9b9565bfcf004948626703e6de", null ],
         [ "STATES", "namespacesettings.html#a3f699ea76b826ccce774874c93b098c2a84a53f9db5f99fba1d12ac126299390f", null ]
       ] ],
-      [ "border", "namespacesettings.html#a6b9a72a925e6c344f93e08e037cc1e6c", null ],
-      [ "changed_cell", "namespacesettings.html#a07e9c40d189e8c742a68454675deafee", null ],
-      [ "ocean_model", "namespacesettings.html#a38b03cb09d38a0dfc1809a7c3f48dcba", null ],
       [ "changed_cells", "namespacesettings.html#a6db971b6718339a9403372e1fa50e674", null ],
       [ "CYCLES", "namespacesettings.html#aca0c44f1d3e93fcd20768cefe88fd4e6", null ],
       [ "DSHARK", "namespacesettings.html#a61557d3a73069743f694b468eff44d5a", null ],

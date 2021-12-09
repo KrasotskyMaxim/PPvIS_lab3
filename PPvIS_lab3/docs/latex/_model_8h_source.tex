@@ -1,0 +1,44 @@
+\hypertarget{_model_8h_source}{}\doxysection{C\+:/\+Users/\+Maks/source/repos/\+PPv\+IS\+\_\+lab3/\+PPv\+IS\+\_\+lab3/\+Model.h}
+\mbox{\hyperlink{_model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_living_8h}{Living.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_settings_8h}{Settings.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_empty_8h}{Empty.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_shark_8h}{Shark.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_whale_8h}{Whale.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_model}{Model}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     \textcolor{keywordtype}{string} path;}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}}()\{\}}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_model_a1e47b338ca8b4f60a5460e4658dd3443}{Model}}(\textcolor{keywordtype}{string} path)}
+\DoxyCodeLine{25     \{}
+\DoxyCodeLine{26         this-\/>path = \mbox{\hyperlink{namespacesettings_a082c4741f3750c712bd4cae91427ef82}{path}};}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_model_aef475e4724f28b31c2dabb4525e3d55e}{run}}();}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_aef475e4724f28b31c2dabb4525e3d55e}{run}}();}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a80302b53d90cb73cf7e0800fd6f3fba9}{init}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean);}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a80fc80140a84a16d07bee90267ede5f5}{eden}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean);}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a50244869d0cca42b87b438b8ffbf9305}{eden\_plankton}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, vector<vector<int>> params);}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a4faa2680d231c0151ecf108e334e998e}{eden\_shark}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, vector<vector<int>> params);}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_ab77df2be5e23ea5a536a5e0ce63908f3}{eden\_whale}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, vector<vector<int>> params);}
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a2a813ec8be2a615635af0a26ddbcab97}{update}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} new\_ocean, \mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} old\_ocean);}
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a54068c88e17b6bf3f7b5e0b932e97cba}{clear}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean);}
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a7bb5aa01f0ef28b7e3582ef374388eb9}{view}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean, \textcolor{keywordtype}{int} CYCLE);}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a296ecc0b04bf27ac2066cd8e0ac39acb}{update\_reproduct\_animals}}(\mbox{\hyperlink{_living_8h_a0f0463fac379f90cdce0db705c187189}{Ocean}} ocean);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{99     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a448888e2c3f6b46d665effc4914b9ba6}{ocean\_model}}(std::string path);}
+\DoxyCodeLine{109     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_model_a7d064cc60c25ecb2cf5fb2d2f51e6634}{border}}(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{119     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_model_a1d295284f585c69ea184a12794e130f6}{changed\_cell}}(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column, \textcolor{keywordtype}{int} cell\_position);}
+\DoxyCodeLine{120 \};}
+
+\end{DoxyCode}

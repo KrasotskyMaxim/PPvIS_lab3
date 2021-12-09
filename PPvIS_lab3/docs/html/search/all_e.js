@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['update_0',['update',['../_p_pv_i_s__lab3_8cpp.html#a69a896a27d10820d0fcf7ea826622bc7',1,'PPvIS_lab3.cpp']]],
-  ['update_5freproduct_5fanimals_1',['update_reproduct_animals',['../_p_pv_i_s__lab3_8cpp.html#aec54f9c961f99d77d8627cbd87d1f27d',1,'PPvIS_lab3.cpp']]]
+  ['update_0',['update',['../class_model.html#a2a813ec8be2a615635af0a26ddbcab97',1,'Model']]],
+  ['update_5freproduct_5fanimals_1',['update_reproduct_animals',['../class_model.html#a296ecc0b04bf27ac2066cd8e0ac39acb',1,'Model']]]
 ];
