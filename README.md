@@ -49,3 +49,36 @@ described by a superclass
 A program implemented on the basis of the developed model should:
 - receive the name of the input file with a description of the world and a description of the operating mode *(automatical simulation or step-by-step simulation pending confirmation from user)* via a command argument;
 - output to the console the state of the playing field on each move. 
+
+# Using
+
+To start creating ocean model you sould to puy in console model file name with settings, for example ***oecans/model1.txt***
+
+# Setting File Struct
+10 - *count of ocean living cycles*
+
+3 - *plankton count*
+
+Plankton **coordinates**:
+
+- 0 1 0
+- 0 2 0
+- 2 1 3
+
+
+2 - *shark count*
+
+Shark **coordinates** and last number is shark **sex** (0 - *female*  1 - *male*):
+
+- 1 0 1 1
+- 2 3 0 0
+
+3 - *whale count*
+
+Whale **coordinates** and last number is Whale **sex** (0 - *female*  1 - *male*):
+
+- 2 2 2 0
+- 1 2 3 1
+- 4 4 3 1
+
+**END**.
