@@ -2,10 +2,10 @@
 #define new_world new_ocean[row][column][cell_position]
 #define old_world old_ocean[new_row][new_column]
 
-
+// make the main logic or whale do his life
 void Whale::next(Ocean old_ocean, Ocean new_ocean)
 {
-
+    // Whale "next" methon logic is the same as shark "next" method logic
     srand(time(NULL));
 
     age += 1;

@@ -18,16 +18,19 @@ namespace settings
 {
 	std::string path;
 
+	// ocean SIZE
 	const int OCEAN_LENGHT = 5;
 	const int OCEAN_WIDTH = 5;
 	const int LIFE_IN_CELL = 4;
+
 	std::vector<std::vector<int>> changed_cells; ///< changed after updating cells coordinates
 	std::vector<std::vector<int>> reproducted_plankton; ///< changed after plankton reproduction cells coordinates
 
+	// the age border of sharks and whales 
 	const int DSHARK = 7;
 	const int DWHALE = 9;
-	int CYCLES;
 
+	int CYCLES;
 
 	enum State
 	{
